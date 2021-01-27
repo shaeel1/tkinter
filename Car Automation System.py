@@ -1,6 +1,3 @@
-# Question  # 3
-# Create car automation system, Insert 5 car records with following field.Car Name, Car ID, Car Manufacturing Name,
-# Car Model, Car Engine No, Car Manufacturing Date, Car Color, Car Authorized Dealer, Car City, Car Price etc.
 # Insert a statement if user selects more than one car than calculate some discount on Car Price(or you may
 # calculate discount on Car Manufacturing Name).You need to insert all records in one sheet / text file and in 2 nd sheet
 # (name all sheet appropriately) create a proper form with all fields, when user select Car ID through drop down list
@@ -39,6 +36,7 @@ Label(root, image=hydra).place(relwidth=1, relheight=1)
 
 
 def car_list(name):
+    # Here you will import your excel file
     wb = xl.load_workbook('car.xlsx')
     sheet = wb['Sheet1']
     cell = sheet[name]
